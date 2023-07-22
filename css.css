@@ -1,4 +1,16 @@
 body {
-	border-image: url('bg.jpg');\
-	background-size: cover;
+	background-image: url('bg.jpg');
+	color: white;
+	font-family: calibri;
+	
+}
+
+
+#yullu {
+	background-color: rgba(0, 0, 0, 0.70);
+}
+table, tr, td {
+	word-wrap: break-word;
+	size: 120%;
+	font-size: 100%;
 }
