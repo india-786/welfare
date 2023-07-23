@@ -57,6 +57,7 @@ additionally, he is recovering cash from mechanics of the market by threatening 
   <div id="caption"></div>
 </div>
 <div id = "mypdfModal" class="modal">
+	<span id= "dlpdf">[View/Download]</span>
 	<span class="close">&times;</span>
 	<center><object type="application/pdf" id='pdf-viewer' data=''></object></center>
 </div>
@@ -106,6 +107,28 @@ modal_pdf.style.display = 'block';
 
 
 	}
+}
+
+var download = document.getElementById('dlpdf');
+download.onclick = function() {
+	data = viewer;
+	const blob = new Blob([data.getAttribute("data")], { type: 'application/pdf' });
+
+    // Creating an object for downloading url
+    const url = window.URL.createObjectURL(blob);
+  
+    // Creating an anchor(a) tag of HTML
+    const a = document.createElement('a');
+  
+    // Passing the blob downloading url 
+    a.setAttribute('href', data.getAttribute("data"));
+  
+    // Setting the anchor tag attribute for downloading
+    // and passing the download file name
+    a.setAttribute('download', 'FileName');
+  
+    // Performing a download with click
+    a.click()
 }
 </script>
 
