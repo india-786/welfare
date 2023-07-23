@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Test</title>
+	<title>Protest for justice</title>
 	<link rel="stylesheet" type="text/css" href="css.css">
 </head>
 
@@ -20,11 +20,11 @@ are various names but in real mainly goon Lakhvinder Singh is head and operation
 </p>
 <p>
 The goon Lakhvinder is completely violating terms and condition and agreement of contract in following manner:
-<table border="2px">
+<table border="2px" >
 	<tr>
 		<td>
 1. 184 truck/ buses/ tempo traveller allowed but parking more than 300 </td>
-<td>[proof dda letter]</td>
+<td><a class='pdf' address='dda.pdf'><label class="address">dda</label>[click for proof]</a></td>
 </tr>
 <tr>
 	<td>
@@ -45,7 +45,69 @@ Rate list below
 <p>
 additionally, he is recovering cash from mechanics of the market by threatening them for their tools on the DDA Land.
 </p>
+<p>
+	photos of some extended hands of the goon are:
+	<img src="goons/1.jpeg" class='pic' alt="Goon">
+	<img src="goons/2.jpeg" class="pic" alt = 'Goon'>
+	<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  
+  <div id="caption"></div>
 </div>
+<div id = "mypdfModal" class="modal">
+	<span class="close">&times;</span>
+	<center><object type="application/pdf" id='pdf-viewer' data=''></object></center>
+</div>
+</p>
+</div>
+ 
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal_pdf = document.getElementById("mypdfModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementsByClassName("pic");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+for(i=0; i<img.length;i++)
+{
+img[i].onclick = function(){
+	// alert('inside')
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+}
+// Get the <span> element that closes the modal
+// When the user clicks on <span> (x), close the modal
+var span = document.getElementsByClassName("close");
+for(i=0; i<span.length; i++) {
+	span[i].onclick = function() {
+		this.parentElement.style.display= "none";
+	}
+}
+
+
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var pdf = document.getElementsByClassName('pdf');
+var viewer = document.getElementById('pdf-viewer');
+for(i = 0;i<pdf.length;i++)
+{
+	pdf[i].onclick = function() {
+		// alert("pppp");
+modal_pdf.style.display = 'block';
+ viewer.setAttribute('data', `proofs/${this.getElementsByClassName('address')[0].innerText}.pdf`);
+
+
+	}
+}
+</script>
 
 </body>
 </html>
