@@ -7,45 +7,50 @@
 </head>
 
 <body>
-<center><h1>MCD is <b>SOLD!!!</b></h1></center>
+<center><h1>🔥<u>MCD is SOLD!!!</u>🔥</h1></center>
 <div id='yullu'>
-	<ol>
-
-<li>Lakhvinder Singh</li>
-<li>Ashok Kumar</li>
-<li>Tun Tun Singh, etc.</li>
-</ol>
-<p>
-are various names but in real mainly goon Lakhvinder Singh is head and operational. Others are just face. In fact Timarpur market parking contract is owned by Ashok Kumar. No one knows and has seen him. 
+<p class='pgrid'>Parking vehicles at punjabi bagh, Sanjay Gandhi Transport Center is completly free then why at Timarpur Market commuters have to pay???
 </p>
-<p>
-The goon Lakhvinder is completely violating terms and condition and agreement of contract in following manner:
-<table border="2px" >
+<p class='pgrid'>This is absolute partiality.</p>
+<p class='pgrid'>The MCD foisted rate list pic for the Timarpur parking is below:
+[pic]</p>
+<p class='pgrid'>
+As you can see the rates are very high. A goon by the name of Lakhvinder Singh filed the highest tender amount equal to 366100/=. In return the dummy face Mr. Ashok kumar  was given position as parking contractor. No one knows and has seen him. The main head and operational goon Lakhvinder Singh is majorily violating terms and condition and agreement of contract. He planned that through overcharging, parking vehicles over againgt layout map and taking monthly from roadside mechanics, dhaba, etc. he could make exponential money. Some proofs of violation according to [TEDER TnC]and [Layout Map] at Timarpur market by him are
+</p>
+<table border="2px" class="tablegrid" >
+	<tr>
+<th>Details</th>
+<th>Proofs</th>		
+	</tr>
 	<tr>
 		<td>
-1. 184 truck/ buses/ tempo traveller allowed but parking more than 300 </td>
-<td><a class='pdf' address='dda.pdf'><label class="address">dda</label>[click for proof]</a></td>
+Can only park 184 bus/truck/Tempo in limited area of 17227 square meter. </td>
+<td><a class='pdf'><label class="address">dda</label>[DDA LETTER]</a></td>
 </tr>
 <tr>
 	<td>
-2. forcefully charging 2 wheelers/ 3 wheelers </td>
-<td>[parchi]</td>
+2. Can not charge 2 whellers, Auto Rickshaw, Electric Ricksahaw </td>
+<td>[Slips]</td>
 </tr>
 <tr>
 	<td>
 3. Over Charging</td>
 <td>
-Rate list below
-[rate list] 
-[proof]
+[Slips]
 </td>
 </tr>
+
 </table> 
+<p class='pgrid'>
+Also, Lakhvinder Singh is the actual owner of parking contracts in name of Ashok kumar, Tun Tun Singh, etc. 
 </p>
 <p>
-additionally, he is recovering cash from mechanics of the market by threatening them for their tools on the DDA Land.
+	The market is badly shook by his devastating actions and reactions.His actions points to destruction of market, a place from where more than 2000 workers earn their livelihood. A vast subset of MCD officials/Police officers are in his pocket. Assistant commissioner(), Deputy Commissioner() of R. P. cell MCD are his special servant. 
 </p>
-<p>
+<p class='pgrid'>
+	The associates of this parking contractor are recovering cash from roadside workers and mechanics by threatening them for their tools on DDA Land. 
+</p>
+<p class='pgrid'>
 	photos of some extended hands of the goon are:
 	<img src="goons/1.jpeg" class='pic' alt="Goon">
 	<img src="goons/2.jpeg" class="pic" alt = 'Goon'>
@@ -61,14 +66,30 @@ additionally, he is recovering cash from mechanics of the market by threatening 
 	<span class="close">&times;</span>
 	<center><object type="application/pdf" id='pdf-viewer' data=''></object></center>
 </div>
+<div id = "myfeedbackModal" class="modal">
+	<span id= "dlpdf">FEEDBACK/Other Important facts/SUGGESTIONS</span>
+	<span class="close">&times;</span>
+	<center><iframe src="feeder.html" id='iframe'></iframe></center>
+</div>
 </p>
+
+<img src="assets/feedback.png" class='add_bottom' id='feedback_icon'/>
+
 </div>
  
 <script>
+
+
+if('virtualKeyboard' in navigator) {
+  navigator.virtualKeyboard.overlaysContent = true;
+}
+
+
+
 // Get the modal
 var modal = document.getElementById("myModal");
 var modal_pdf = document.getElementById("mypdfModal");
-
+var feedback_modal = document.getElementById('myfeedbackModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementsByClassName("pic");
 var modalImg = document.getElementById("img01");
@@ -92,9 +113,9 @@ for(i=0; i<span.length; i++) {
 }
 
 
-span.onclick = function() { 
-  modal.style.display = "none";
-}
+// span.onclick = function() { 
+//   modal.style.display = "none";
+// }
 
 var pdf = document.getElementsByClassName('pdf');
 var viewer = document.getElementById('pdf-viewer');
@@ -107,6 +128,12 @@ modal_pdf.style.display = 'block';
 
 
 	}
+}
+
+var feedback_icon = document.getElementById("feedback_icon");
+feedback_icon.onclick = function() {
+	// alert("0000");
+	feedback_modal.style.display = 'block';
 }
 
 var download = document.getElementById('dlpdf');

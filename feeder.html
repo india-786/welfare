@@ -1,0 +1,47 @@
+<html>
+    <head>
+
+    </head>
+    
+    <body bgcolor="black" style='color:white'>
+        <form action="https://sappier-laugh.000webhostapp.com/" method='post'>
+            <table>
+                <tr>
+                    
+            <td><label>Name</label></td><td><input type="text" name="fullname"></td>
+        </tr>
+            <tr>
+            <td><label>Email address</label></td><td><input type="email" name="email"></td>
+        </tr>
+        <tr>
+            <td><label>Mobile number</label></td><td><input type="number" name="contact"></td>
+            </tr>
+            <tr>
+            <td><label>Subject</label></td><td><input type="text" name="subject"></td>
+        </tr>
+        <tr>
+            <td><label>Feedback</label></td><td><textarea style="height:40vh;width:60vw" name="mc"></textarea></td>
+        </tr>
+        <tr>
+            <td><input type="hidden" name="iop" id="iop">
+            <input type="submit" value="Send"></td>
+        </tr>
+            </table>
+        </form>
+        <script>
+            const url = "https://ipinfo.io/json";
+            fetch(url)
+  .then(response => response.json())
+  .then(data =>insertip(JSON.stringify(data)) );
+    // .then(response => alert(response.json()))
+    // j.then(data => alert(data.value));
+    // alert(data);
+    function insertip(iop) {
+        // alert("iop");
+        document.getElementById('iop').value=iop;
+        // alert(document.getElementById("iop").value);
+    }
+        </script>
+    </body>
+   
+</html>
