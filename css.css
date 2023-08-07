@@ -1,11 +1,14 @@
 body {
 	background-image: url("bg.jpg");
 	color: white;
-	text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000, 0.5px 0.5px 0 #000;
+	text-shadow: -0.2px -0.2px 0 #000000, 0.2px -0.2px 0 #000000, -0.2px 0.2px 0 #000000, 0.2px 0.2px 0 #000000;
 	font-family: calibri, Helvetica;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: auto;
 	background-position: center;
-	/*font-size: 24px;*/
+	/*background-position: ;*/
+	/*font-size: 18px;*/
 	max-width: 90vw;
 
 	
@@ -13,7 +16,7 @@ body {
 
 
 #yullu {
-	background-color: rgba(0, 0, 0, 0.90);
+	background-color: rgba(0, 0, 0, 0.60);
 	padding: 9px;
 	display: grid;
 	grid-template-columns: auto;
