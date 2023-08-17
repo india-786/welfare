@@ -1,31 +1,31 @@
 body {
-	background-image: url("bg.jpg");
-	color: white;
-	text-shadow: -0.2px -0.2px 0 #000000, 0.2px -0.2px 0 #000000, -0.2px 0.2px 0 #000000, 0.2px 0.2px 0 #000000;
+	background-color: #f3fdb3;
+	color: rgb(82, 37, 0);
+	/* text-shadow: -0.2px -0.2px 0 #000000, 0.2px -0.2px 0 #000000, -0.2px 0.2px 0 #000000, 0.2px 0.2px 0 #000000; */
 	font-family: calibri, Helvetica;
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center;
 	/*background-position: ;*/
 	/*font-size: 18px;*/
-	max-width: 90vw;
+	/* max-width: 90vw; */
 
 	
 }
 
 
 #yullu {
-	background-color: rgba(0, 0, 0, 0.60);
+	/* background-color: rgba(0, 0, 0, 0.60); */
 	padding: 9px;
 	display: grid;
 	grid-template-columns: auto;
 	max-width: 90vw
 }
-
-p.pgrid {
-
+a.pdf {
+  color:blue;
+  text-decoration: underline;
+  cursor: pointer;
 }
-
 
 
 table, tr, td {
@@ -33,15 +33,17 @@ table, tr, td {
 	/*size: 100%;*/
 	font-size: 100%;
 }
-table, td {
-	border-style: dashed;
+table {
+	border-style: outset;
 }
 img.pic {
-	height:120px;
-	width: 120px;
+	height:50vh;
+	width: 80vw;
+  max-width: 300px;
 	border-radius: 5px;
   cursor: pointer;
   transition: 0.2s;
+  
 }
 
 /*start model*/

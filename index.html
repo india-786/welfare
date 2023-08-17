@@ -15,9 +15,11 @@
 </p>
 <p class='pgrid'>This is absolute partiality.</p>
 <p class='pgrid'>The MCD foisted rate list pic for the Timarpur parking is below:<br>
+	<Center>
 <img src="assets/fakelist.jpg" class="pic" alt='fake rate list'></p>
+</Center>
 <p class='pgrid'>
-As you can see the rates are very high. A goon by the name of Lakhvinder Singh filed the highest tender amount equal to 366100/=. In return the dummy face Mr. Ashok kumar  was given position as parking contractor. No one knows and has seen him. The main head and operational goon Lakhvinder Singh is majorily violating terms and condition and agreement of contract. He planned that through overcharging, parking vehicles over againgt layout map and taking monthly from roadside mechanics, dhaba, etc. he could make exponential money. Some proofs of violation according to  <a class='pdf'><label class="address">Tendernotice</label>[TEDER TnC]📄</a>and [Layout Map] at Timarpur market by him are
+As you can see the rates are very high. A goon by the name of <a class='hidden_pic' href = "goons/lakhvinder.jpg" >Lakhvinder Singh</a> filed the highest tender amount equal to 366100/=(without tax). In return the dummy face Mr. Ashok kumar  was given position as parking contractor. No one knows and has seen him. The main head and operational goon Lakhvinder Singh is majorily violating terms and condition and agreement of contract. He planned that through overcharging, parking vehicles over againgt layout map and taking monthly from roadside mechanics, dhaba, etc. he could make exponential money. Some proofs of violation according to  <a class='pdf'><label class="address">Tendernotice</label>[TEDER TnC]📄</a>and [Layout Map] at Timarpur market by him are
 </p>
 <table border="2px" class="tablegrid" >
 	<tr>
@@ -26,20 +28,20 @@ As you can see the rates are very high. A goon by the name of Lakhvinder Singh f
 	</tr>
 	<tr>
 		<td>
-Can only park 184 bus/truck/Tempo in limited area of 17227 square meter. </td>
+1. Can only park 184 bus/truck/Tempo in limited area of 17227 square meter. </td>
 <td><a class='pdf'><label class="address">dda</label>[DDA LETTER]📄</a></td>
 </tr>
 <tr>
 	<td>
 2. Can not charge 2 whellers, Auto Rickshaw, Electric Ricksahaw </td>
-<td>[Slips]</td>
+<td><a class = "hidden_pic" href="proofs/unauthorise_charging.jpg">[Slips]</a></td>
 </tr>
 <tr>
 	<td>
 3. Over Charging</td>
 <td>
-[Slips]📷
-</td>
+<a class = 'hidden_pic' href = "proofs/overcharging.jpg">[Slips]📷
+</a></td>
 </tr>
 
 </table> 
@@ -54,8 +56,10 @@ Also, Lakhvinder Singh is the actual owner of parking contracts in name of Ashok
 </p>
 <p class='pgrid'>
 	photos of some extended hands of the goon are:
+	<center>
 	<img src="goons/1.jpeg" class='pic' alt="Goon">
 	<img src="goons/2.jpeg" class="pic" alt = 'Goon'>
+</center>
 	<!-- The Modal -->
 <div id="myModal" class="modal">
   <span class="close">&times;</span>
@@ -64,7 +68,7 @@ Also, Lakhvinder Singh is the actual owner of parking contracts in name of Ashok
   <div id="caption"></div>
 </div>
 <div id = "mypdfModal" class="modal">
-	<span id= "dlpdf">[View/Download]</span>
+	<span id= "dlpdf">[View/Download FULL pdf]</span>
 	<span class="close">&times;</span>
 	<center><object type="application/pdf" id='pdf-viewer' data=''></object></center>
 </div>
@@ -94,6 +98,7 @@ var modal_pdf = document.getElementById("mypdfModal");
 var feedback_modal = document.getElementById('myfeedbackModal');
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementsByClassName("pic");
+var pic_in_text = document.getElementsByClassName("hidden_pic");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 for(i=0; i<img.length;i++)
@@ -105,6 +110,17 @@ img[i].onclick = function(){
   captionText.innerHTML = this.alt;
 }
 }
+
+for(i = 0; i<pic_in_text.length; i++) {
+	pic_in_text[i].onclick = function(e) {
+		
+	
+		modal.style.display = "block";
+		modalImg.src = this.href;
+		e.preventDefault();
+	}
+}
+
 // Get the <span> element that closes the modal
 // When the user clicks on <span> (x), close the modal
 var span = document.getElementsByClassName("close");
