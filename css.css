@@ -1,18 +1,20 @@
 body {
-	background-color: #f3fdb3;
+	background-color: rgb(248, 240, 227);
 	color: rgb(82, 37, 0);
 	/* text-shadow: -0.2px -0.2px 0 #000000, 0.2px -0.2px 0 #000000, -0.2px 0.2px 0 #000000, 0.2px 0.2px 0 #000000; */
-	font-family: calibri, Helvetica;
+	font-family: seravek, calibri, Helvetica;
 	background-repeat: no-repeat;
 	background-size: auto;
 	background-position: center;
 	/*background-position: ;*/
-	/*font-size: 18px;*/
+	font-size: 115%;
 	/* max-width: 90vw; */
 
 	
 }
-
+#dlpdf {
+  color:white;
+}
 
 #yullu {
 	/* background-color: rgba(0, 0, 0, 0.60); */
